@@ -159,4 +159,6 @@ ul {
 #footer {
   background-color: #dfd8d4;
   text-align: center;
+  padding-top:1rem;
+  margin-top: 2rem;
 }
