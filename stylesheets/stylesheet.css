@@ -1,0 +1,162 @@
+/* Setting default font for entire page */
+.body {
+  /* font-size: 110%; */
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+  background-color: #f2e9e4;
+}
+
+/* Text align changes */
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .body {
+      text-align: center;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992) {
+  .body {
+      text-align: left;
+  }
+}
+
+/* Adding padding between sections */
+section {
+  padding-top: 1rem;
+}
+
+/* Dividers between sections */
+hr.solid {
+  border-top: 3px solid #c9ada7;
+  width: 75%;
+  margin-left: 12.5%;
+  align-content: center;
+}
+
+/* Navbar styling */
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: white;
+  font-size: 18px;
+  transition: background-color 2s ease-out;
+}
+
+/* Hero bg image */
+.bgimage {
+  height: 100vh;
+  background: url('../images/KeenanMain.jpg') top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Style landing page title and description */
+.hero_title {
+  font-size: 4.5rem;
+}
+
+.hero_desc {
+  font-size: 2rem;
+}
+/* Ensures that text is always centered */
+.hero_text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+/* Class for general headers that are centered */
+.center-header {
+  margin: 20px auto;
+  color: black;
+  position: relative;
+  text-align: center;
+}
+/* Pseudo-element for each header*/
+.center-header::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 5px;
+  background: #4a4e69;
+  margin-top: 45px;
+  left: 45%;
+  top: 10%;
+  position: absolute;
+  text-align: center;
+}
+
+/* About page image styling */
+.imageAboutPage {
+  /* padding:5%; */
+  width: 100%;
+  height:100%;
+  object-fit:contain;
+}
+
+p, li {
+  font-size: 18px;
+}
+
+/* Styling for bullets staying close to list content */
+ul {
+  list-style-position:inside;
+  padding: 0%;
+}
+
+/* Change color of github button */
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  max-width: fit-content;
+}
+
+
+/* Skills section css */
+.skillsText.card {
+  min-height: 280px;
+  cursor: pointer;
+}
+.skillsIcon {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+}
+.card-title {
+  text-align: center;
+}
+.card:hover .skillsIcon {
+  color: #9a8c98;
+}
+.skillsText:hover {
+  border: 1px solid #9a8c98;
+}
+
+/* Add background color black on navbar scroll */
+.navbarScroll.navbarDark {
+  transition: background-color .2s ease-out;
+  background-color: #22223b;
+}
+/* Remove background color */
+.navbarScroll {
+  transition: background-color .2s ease-out;
+  background-color: transparent;
+}
+
+/* social media icons styling */
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+.fa-instagram:hover,.fa-github:hover,.fa-linkedin:hover{
+  color: #9a8c98;
+}
+.fab {
+  color: #000000;
+}
+/* footer styling */
+#footer {
+  background-color: #dfd8d4;
+  text-align: center;
+}
