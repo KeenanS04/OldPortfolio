@@ -2,7 +2,7 @@
 .body {
   /* font-size: 110%; */
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
-  /* background-color: #f2e9e4; */
+  background-color: white;
 }
 
 /* Text align changes */
@@ -78,10 +78,10 @@ hr.solid {
 .hero_title {
   font-size: 4.5rem;
 }
-
 .hero_desc {
   font-size: 2rem;
 }
+
 /* Ensures that text is always centered */
 .hero_text {
   text-align: center;
