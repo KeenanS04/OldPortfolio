@@ -2,7 +2,7 @@
 .body {
   /* font-size: 110%; */
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
-  background-color: #f2e9e4;
+  /* background-color: #f2e9e4; */
 }
 
 /* Text align changes */
@@ -43,6 +43,19 @@ hr.solid {
   margin-left: 12.5%;
   align-content: center;
   margin-top: 2rem;
+}
+
+/* Custom button */
+.btn-custom {
+  background-color: #22223b !important;
+  color: white !important;
+}
+
+/* Card text styling */
+.card-text {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
 }
 
 /* Navbar styling */
@@ -134,19 +147,16 @@ hr.solid {
   border: 1px solid #9a8c98;
 }
 
-/* Skills icons styling */
-.social-icons {
-  font-size: 36px;
-  cursor: pointer;
+/* Projects section css */
+.projects.card {
+  min-height: 280px;
 }
-.fa-instagram:hover,.fa-github:hover,.fa-linkedin:hover{
-  color: #9a8c98;
+.projects-button:hover {
+  color:gray !important;
 }
-.fab {
-  color: #000000;
+.fab:hover {
+  color:inherit;
 }
-
-
 
 /* Add background color black on navbar scroll */
 .navbarScroll.navbarDark {
@@ -161,8 +171,20 @@ hr.solid {
 
 /* footer styling */
 #footer {
-  background-color: #dfd8d4;
+  /* background-color: #dfd8d4; */
+  background-color:#22223b;
+  color: white;
   text-align: center;
   padding-top:1rem;
   margin-top: 2rem;
+}
+.fab {
+  color: white;
+}
+.footer-icon {
+  font-size: 36px;
+  cursor: pointer;
+}
+.footer-icon:hover {
+  color:gray;
 }
