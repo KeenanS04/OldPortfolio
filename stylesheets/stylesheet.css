@@ -122,15 +122,9 @@ hr.solid {
   object-fit:contain;
 }
 
-/* Change color of github button */
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-  max-width: fit-content;
-}
-
 /* Skills section css */
 .skillsText.card {
   min-height: 280px;
-  cursor: pointer;
 }
 .skillsIcon {
   font-size: 36px;
@@ -140,12 +134,6 @@ hr.solid {
 .card-title {
   text-align: center;
 }
-.card:hover .skillsIcon {
-  color: #9a8c98;
-}
-.skillsText:hover {
-  border: 1px solid #9a8c98;
-}
 
 /* Projects section css */
 .projects.card {
@@ -153,9 +141,6 @@ hr.solid {
 }
 .projects-button:hover {
   color:gray !important;
-}
-.fab:hover {
-  color:inherit;
 }
 
 /* Add background color black on navbar scroll */
@@ -178,13 +163,13 @@ hr.solid {
   padding-top:1rem;
   margin-top: 2rem;
 }
-.fab {
-  color: white;
-}
-.footer-icon {
+.social-icons {
   font-size: 36px;
   cursor: pointer;
 }
-.footer-icon:hover {
+footer a {
+  color: white;
+}
+footer a:hover {
   color:gray;
 }
