@@ -38,11 +38,18 @@ ul {
 
 /* Dividers between sections */
 hr.solid {
-  border-top: 3px solid #c9ada7;
+  border-top: 3px solid #22223b;
   width: 75%;
   margin-left: 12.5%;
   align-content: center;
   margin-top: 2rem;
+}
+hr.footer {
+  border-top: 3px solid white;
+  width: 20%;
+  margin:0 auto 0 40%;
+  align-content: center;
+  padding:0%;
 }
 
 /* Custom button */
@@ -120,6 +127,12 @@ hr.solid {
   width: 100%;
   height:100%;
   object-fit:contain;
+}
+
+/* Card row styling */
+.card-row {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* Skills section css */
