@@ -3,6 +3,12 @@
   /* font-size: 110%; */
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
   background-color: white;
+  transition: background-color .05s ease-out;
+}
+
+.dark-mode {
+  background-color: #1a1f2c;
+  color: white;
 }
 
 /* Text align changes */
@@ -44,6 +50,13 @@ hr.solid {
   align-content: center;
   margin-top: 2rem;
 }
+hr.solid-dark {
+  border-top: 3px solid white;
+  width: 75%;
+  margin-left: 12.5%;
+  align-content: center;
+  margin-top: 2rem;
+}
 hr.footer {
   border-top: 3px solid white;
   width: 20%;
@@ -54,8 +67,11 @@ hr.footer {
 
 /* Custom button */
 .btn-custom {
-  background-color: #22223b !important;
+  background-color: #34345b !important;
   color: white !important;
+}
+.btn-custom:hover {
+  color:gray !important;
 }
 
 /* Card text styling */
@@ -103,7 +119,6 @@ hr.footer {
 /* Class for general headers that are centered */
 .center-header {
   margin: 20px auto;
-  color: black;
   position: relative;
   text-align: center;
 }
@@ -134,6 +149,9 @@ hr.footer {
   padding-left: 10%;
   padding-right: 10%;
 }
+.card.bg-dark {
+  background: #1f2534 !important;
+}
 
 /* Skills section css */
 .skillsText.card {
@@ -152,9 +170,6 @@ hr.footer {
 .projects.card {
   min-height: 280px;
 }
-.projects-button:hover {
-  color:gray !important;
-}
 
 /* Add background color black on navbar scroll */
 .navbarScroll.navbarDark {
@@ -165,6 +180,22 @@ hr.footer {
 .navbarScroll {
   transition: background-color .2s ease-out;
   background-color: transparent;
+}
+
+.dark-button {
+  position:fixed;
+  bottom:40px;
+  right:40px;
+  background-color: #4b5b81 !important;
+  color: white !important;
+  text-align: center;
+}
+.dark-button-above {
+  position:relative;
+  color: aqua;
+}
+.fa-circle-half-stroke {
+  font-size: 3rem;
 }
 
 /* footer styling */
