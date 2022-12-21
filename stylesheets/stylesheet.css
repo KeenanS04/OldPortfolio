@@ -3,7 +3,7 @@
   /* font-size: 110%; */
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
   background-color: white;
-  transition: background-color .05s ease-out;
+  transition: background-color .2s ease-out;
 }
 
 .dark-mode {
@@ -92,7 +92,7 @@ hr.footer {
 /* Hero bg image */
 .bgimage {
   height: 100vh;
-  background: url('../images/KeenanMain.jpg') top center;
+  background: url('../images/KeenanMain.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
@@ -150,6 +150,7 @@ hr.footer {
   padding-right: 10%;
 }
 .card.bg-dark {
+  transition: background-color .2s ease-out;
   background: #1f2534 !important;
 }
 
@@ -189,6 +190,9 @@ hr.footer {
   background-color: #4b5b81 !important;
   color: white !important;
   text-align: center;
+  font-size: 1rem;
+  width: 50px;
+  height: 50px;
 }
 .dark-button-above {
   position:relative;
