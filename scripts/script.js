@@ -6,14 +6,14 @@ console.log(header)
 window.onscroll = function() {
     const top = window.scrollY;
     if(top >=100) {
-        header.classList.add('bg-dark');
+        header.classList.add('navbarDark');
         navbrand.classList.add('navitemDark')
         for (let i = 0; i < navitems.length; i++) {
             navitems[i].classList.add('navitemDark');
         }
     }
     else {
-        header.classList.remove('bg-dark');
+        header.classList.remove('navbarDark');
         navbrand.classList.remove('navitemDark')
         for (let i = 0; i < navitems.length; i++) {
             navitems[i].classList.remove('navitemDark');
