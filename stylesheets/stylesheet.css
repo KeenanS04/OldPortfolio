@@ -82,17 +82,36 @@ hr.footer {
 }
 
 /* Navbar styling */
-.navbar-custom .navbar-brand,
-.navbar-custom .nav-link {
-  color: white;
+a.navbar-brand {
+  transition: .2s ease-out;
   font-size: 18px;
-  transition: background-color 2s ease-out;
+  color: #22223b;
+}
+a.navbar-brand.navitemDark {
+  transition: .2s ease-out;
+  color: #ffffff;
+}
+.navbar-nav li a {
+  transition: .2s ease-out;
+  font-size: 18px;
+  color:#22223b;
+}
+.navbar-nav li a.navitemDark {
+  transition: .2s ease-out;
+  color:#ffffff;
+}
+nav {
+  transition: .2s ease-out;
+}
+nav.bg-dark {
+  transition: .2s ease-out;
+  background-color: #22223b !important;
 }
 
 /* Hero bg image */
 .bgimage {
   height: 100vh;
-  background: url('../images/KeenanMain.jpg');
+  background: url('../images/KeenanMain2.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
@@ -170,17 +189,6 @@ hr.footer {
 /* Projects section css */
 .projects.card {
   min-height: 280px;
-}
-
-/* Add background color black on navbar scroll */
-.navbarScroll.navbarDark {
-  transition: background-color .2s ease-out;
-  background-color: #22223b;
-}
-/* Remove background color */
-.navbarScroll {
-  transition: background-color .2s ease-out;
-  background-color: transparent;
 }
 
 .dark-button {

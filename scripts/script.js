@@ -1,13 +1,23 @@
 // add class navbarDark on navbar scroll
 const header = document.querySelector('.navbar');
+const navitems = document.getElementsByClassName('nav-link');
+const navbrand = document.querySelector('.navbar-brand');
 console.log(header)
 window.onscroll = function() {
     const top = window.scrollY;
     if(top >=100) {
-        header.classList.add('navbarDark');
+        header.classList.add('bg-dark');
+        navbrand.classList.add('navitemDark')
+        for (let i = 0; i < navitems.length; i++) {
+            navitems[i].classList.add('navitemDark');
+        }
     }
     else {
-        header.classList.remove('navbarDark');
+        header.classList.remove('bg-dark');
+        navbrand.classList.remove('navitemDark')
+        for (let i = 0; i < navitems.length; i++) {
+            navitems[i].classList.remove('navitemDark');
+        }
     }
 }
 
