@@ -2,19 +2,22 @@
 const header = document.querySelector('.navbar');
 const navitems = document.getElementsByClassName('nav-link');
 const navbrand = document.querySelector('.navbar-brand');
+const navtoggler = document.querySelector('navbar-toggler-icon')
 console.log(header)
 window.onscroll = function() {
     const top = window.scrollY;
     if(top >=100) {
-        header.classList.add('navbarDark');
-        navbrand.classList.add('navitemDark')
+        header.classList.add('navbar-dark');
+        header.classList.add('bg-dark');
+        navbrand.classList.add('navitemDark');
         for (let i = 0; i < navitems.length; i++) {
             navitems[i].classList.add('navitemDark');
         }
     }
     else {
-        header.classList.remove('navbarDark');
-        navbrand.classList.remove('navitemDark')
+        header.classList.remove('navbar-dark');
+        header.classList.remove('bg-dark');
+        navbrand.classList.remove('navitemDark');
         for (let i = 0; i < navitems.length; i++) {
             navitems[i].classList.remove('navitemDark');
         }

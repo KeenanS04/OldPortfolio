@@ -20,7 +20,7 @@
 
 <body class="body">
     <!-- Nav bar with transparent background and fixed at top -->
-    <nav class="navbar navbar-custom navbar-expand-lg fixed-top navbar-dark navbarScroll">
+    <nav class="navbar navbar-custom navbar-expand-lg fixed-top navbarScroll">
         <!-- Nav bar constantly resizes based on window size -->
         <div class="container-fluid">
             <!-- Brand with 0 bottom margin and h1 styling -->
@@ -29,7 +29,9 @@
                 , span class indicates button icon -->
             <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <!-- <i class="fas fa-bars"></i> -->
+                </span>
             </button>
             <!-- Nav items that go inside button, indicated by id #navbarNav -->
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -200,7 +202,7 @@
         </div>
     </section>
 
-    <button onclick= "toggleDark()" class="dark-button btn btn-default"><i class="fa fa-circle-half-stroke"></i></button>
+    <button onclick= "toggleDark()" class="dark-button"><i class="fa fa-circle-half-stroke dark-icon"></i></button>
     
     <!-- Footer -->
     <footer id="footer" class="footer">

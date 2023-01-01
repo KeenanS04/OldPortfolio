@@ -14,13 +14,22 @@
 /* Text align changes */
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+  p, li {
+    font-size: 14px;
+  }
   .body {
       text-align: center;
+  }
+  .navbar-nav {
+    text-align: left;
   }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992) {
+  p, li {
+    font-size: 18px;
+  }
   .body {
       text-align: left;
   }
@@ -29,11 +38,6 @@
 /* Adding padding between sections */
 section {
   padding-top: 1rem;
-}
-
-/* Default font size */
-p, li {
-  font-size: 18px;
 }
 
 /* Styling for bullets staying close to list content */
@@ -76,8 +80,8 @@ hr.footer {
 
 /* Card text styling */
 .card-text {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-align: center;
 }
 
@@ -100,12 +104,19 @@ a.navbar-brand.navitemDark {
   transition: .2s ease-out;
   color:#ffffff;
 }
+.navbar-nav li a:hover {
+  color: gray;
+}
 nav {
   transition: .2s ease-out;
 }
-nav.navbarDark {
+nav.navbar-dark {
   transition: .2s ease-out;
-  background-color: #22223b;
+  background-color: #22223b !important;
+}
+.navbar-toggler-icon {
+  transition: .2s ease-out;
+  
 }
 
 /* Hero bg image */
@@ -114,6 +125,7 @@ nav.navbarDark {
   background: url('../images/KeenanMain2.jpg');
   background-size: cover;
   background-attachment: fixed;
+  background-position: 50% 50%
 }
 
 /* Style landing page title and description */
@@ -194,20 +206,20 @@ nav.navbarDark {
 .dark-button {
   position:fixed;
   bottom:40px;
-  right:40px;
+  right:20px;
   background-color: #4b5b81 !important;
   color: white !important;
   text-align: center;
   font-size: 1rem;
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  border-color: #4b5b81;
 }
-.dark-button-above {
-  position:relative;
-  color: aqua;
-}
-.fa-circle-half-stroke {
-  font-size: 3rem;
+
+.dark-button i {
+  font-size: 1.5rem;
+  margin-top:10%;
 }
 
 /* footer styling */
