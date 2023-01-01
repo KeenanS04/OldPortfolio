@@ -1,6 +1,6 @@
 /* Setting default font for entire page */
 .body {
-  font-family: 'Nunito';
+  font-family: 'Nunito', sans-serif;
   background-color: white;
   transition: background-color .2s ease-out;
 }
