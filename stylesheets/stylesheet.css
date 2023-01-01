@@ -1,7 +1,6 @@
 /* Setting default font for entire page */
 .body {
-  /* font-size: 110%; */
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+  font-family: 'Nunito';
   background-color: white;
   transition: background-color .2s ease-out;
 }
